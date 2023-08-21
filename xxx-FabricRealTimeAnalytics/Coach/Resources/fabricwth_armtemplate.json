@@ -1,0 +1,169 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "namespaces_fabricwtheventhubs_name": {
+            "type": "String"
+        },
+        "containerGroups_fabricwthcontainerinstance_name": {
+            "type": "String"
+        },
+        "mu": {
+            "type": "String"
+        },
+        "sigma": {
+            "type": "String"
+        },
+        "increasechance": {
+            "type": "String"
+        }
+    },
+    "variables": {
+        "namespaceName": "[parameters('namespaces_fabricwtheventhubs_name')]",
+        "defaultSASKeyName": "RootManageSharedAccessKey",
+        "authRuleResourceId": "[resourceId('Microsoft.EventHub/namespaces/authorizationRules', variables('namespaceName'), variables('defaultSASKeyName'))]"
+    },
+    "outputs": {
+        "PrimaryConnectionString": {
+            "type": "string",
+            "value": "[listkeys(variables('authRuleResourceId'), '2017-04-01').primaryConnectionString]"
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.EventHub/namespaces",
+            "apiVersion": "2022-10-01-preview",
+            "name": "[parameters('namespaces_fabricwtheventhubs_name')]",
+            "location": "West US 3",
+            "sku": {
+                "name": "Basic",
+                "tier": "Basic",
+                "capacity": 1
+            },
+            "properties": {
+                "minimumTlsVersion": "1.2",
+                "publicNetworkAccess": "Enabled",
+                "disableLocalAuth": false,
+                "zoneRedundant": true,
+                "isAutoInflateEnabled": false,
+                "maximumThroughputUnits": 0,
+                "kafkaEnabled": false
+            }
+        },
+        {
+            "type": "Microsoft.EventHub/namespaces/authorizationrules",
+            "apiVersion": "2022-10-01-preview",
+            "name": "[concat(parameters('namespaces_fabricwtheventhubs_name'), '/RootManageSharedAccessKey')]",
+            "location": "westus3",
+            "dependsOn": [
+                "[resourceId('Microsoft.EventHub/namespaces', parameters('namespaces_fabricwtheventhubs_name'))]"
+            ],
+            "properties": {
+                "rights": [
+                    "Listen",
+                    "Manage",
+                    "Send"
+                ]
+            }
+        },
+        {
+            "type": "Microsoft.EventHub/namespaces/eventhubs",
+            "apiVersion": "2022-10-01-preview",
+            "name": "[concat(parameters('namespaces_fabricwtheventhubs_name'), '/fwtheventhub')]",
+            "location": "westus3",
+            "dependsOn": [
+                "[resourceId('Microsoft.EventHub/namespaces', parameters('namespaces_fabricwtheventhubs_name'))]"
+            ],
+            "properties": {
+                "retentionDescription": {
+                    "cleanupPolicy": "Delete",
+                    "retentionTimeInHours": 1
+                },
+                "messageRetentionInDays": 1,
+                "partitionCount": 2,
+                "status": "Active"
+            }
+        },
+        {
+            "type": "Microsoft.EventHub/namespaces/networkrulesets",
+            "apiVersion": "2022-10-01-preview",
+            "name": "[concat(parameters('namespaces_fabricwtheventhubs_name'), '/default')]",
+            "location": "westus3",
+            "dependsOn": [
+                "[resourceId('Microsoft.EventHub/namespaces', parameters('namespaces_fabricwtheventhubs_name'))]"
+            ],
+            "properties": {
+                "publicNetworkAccess": "Enabled",
+                "defaultAction": "Allow",
+                "virtualNetworkRules": [],
+                "ipRules": [],
+                "trustedServiceAccessEnabled": false
+            }
+        },
+        {
+            "type": "Microsoft.ContainerInstance/containerGroups",
+            "apiVersion": "2023-05-01",
+            "name": "[parameters('containerGroups_fabricwthcontainerinstance_name')]",
+            "location": "westus3",
+            "properties": {
+                "sku": "Standard",
+                "containers": [
+                    {
+                        "name": "[parameters('containerGroups_fabricwthcontainerinstance_name')]",
+                        "properties": {
+                            "image": "cameronkahrsdocker/fabricwthdatapumpv2",
+                            "ports": [
+                                {
+                                    "protocol": "TCP",
+                                    "port": 80
+                                }
+                            ],
+                            "environmentVariables": [
+                                                                {
+                                    "name": "eventhubname",
+                                    "value": "fwtheventhub"
+                                },
+                                {
+                                    "name": "eventconnectionstring",
+                                    "value": "[listkeys(variables('authRuleResourceId'), '2017-04-01').primaryConnectionString]"
+                                },
+                                {
+                                    "name": "mu",
+                                    "value": "[parameters('mu')]"
+                                },
+                                {
+                                    "name": "sigma",
+                                    "value": "[parameters('sigma')]"
+                                },
+                                {
+                                    "name": "increasechance",
+                                    "value": "[parameters('increasechance')]"
+                                }
+                            ],
+                            "resources": {
+                                "requests": {
+                                    "memoryInGB": 1,
+                                    "cpu": 1
+                                }
+                            }
+                        }
+                    }
+                ],
+                "initContainers": [],
+                "restartPolicy": "OnFailure",
+                "ipAddress": {
+                    "ports": [
+                        {
+                            "protocol": "TCP",
+                            "port": 80
+                        }
+                    ],
+                    "ip": "20.14.36.176",
+                    "type": "Public"
+                },
+                "osType": "Linux"
+            }
+        }
+    ]
+    
+}

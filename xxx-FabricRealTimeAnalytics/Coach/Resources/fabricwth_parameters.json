@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "namespaces_fabricwtheventhubs_name": {
+            "value": "fabricwtheventhubnamespace"
+        },
+        "containerGroups_fabricwthcontainerinstance_name": {
+            "value": "fabricwithcontainerinstance"
+        },
+        "mu": {
+            "value": "1.00"
+        },
+        "sigma": {
+            "value": "0.05"
+        },
+        "increasechance": {
+            "value": "0.90"
+        }
+    }
+}
