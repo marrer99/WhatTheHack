@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "namespaces_fabricwtheventhubs_name": {
-            "value": "ADDPREFIXHERE_fabricwtheventhubnamespace"
+            "value": "<ADDPREFIXHERE>fabricwtheventhubnamespace"
         },
         "containerGroups_fabricwthcontainerinstance_name": {
-            "value": "ADDPREFIXHERE_fabricwithcontainerinstance"
+            "value": "<ADDPREFIXHERE>fabricwithcontainerinstance"
         },
         "mu": {
             "value": "1.00"
@@ -18,7 +18,7 @@
             "value": "0.50"
         },
         "stockstartprice": {
-            "value": "1000"
+            "value": 1000
         }
     }
 }
