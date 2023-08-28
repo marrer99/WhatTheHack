@@ -16,6 +16,9 @@
         },
         "increasechance": {
             "type": "String"
+        },
+        "stockstartprice": {
+            "type": "Int"
         }
     },
     "variables": {
@@ -138,6 +141,10 @@
                                 {
                                     "name": "increasechance",
                                     "value": "[parameters('increasechance')]"
+                                },
+                                {
+                                    "name": "stockstartprice",
+                                    "value": "[parameters('stockstartprice')]"
                                 }
                             ],
                             "resources": {

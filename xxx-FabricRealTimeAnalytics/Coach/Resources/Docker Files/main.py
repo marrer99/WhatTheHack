@@ -7,22 +7,23 @@ import json
 
 from azure.eventhub import EventHubProducerClient, EventData
 
-dataTable = [
-     ['WHO', 1000] 
-    ,['WHAT', 1000] 
-    ,['IDK', 1000] 
-    ,['WHY', 1000] 
-    ,['BCUZ', 1000] 
-    ,['TMRW', 1000] 
-    ,['TDY', 1000] 
-    ,['IDGD', 1000] 
-    ]
-
 ConnectionString = os.environ['eventconnectionstring']
 EventHubName = os.environ['eventhubname']
 Mu = float(os.environ['mu'])
 Sigma = float(os.environ['sigma'])
 IncreaseChance = float(os.environ['increasechance'])
+StockStartPrice = os.environ['stockstartprice']
+
+dataTable = [
+     ['WHO', StockStartPrice] 
+    ,['WHAT', StockStartPrice] 
+    ,['IDK', StockStartPrice] 
+    ,['WHY', StockStartPrice] 
+    ,['BCUZ', StockStartPrice] 
+    ,['TMRW', StockStartPrice] 
+    ,['TDY', StockStartPrice] 
+    ,['IDGD', StockStartPrice] 
+    ]
 
 # Create a producer client to produce and publish events to the event hub.
 producer = EventHubProducerClient.from_connection_string(conn_str = ConnectionString, eventhub_name = EventHubName)
@@ -34,8 +35,6 @@ while True:
         symbol = record[0]
         price = record[1]
 
-        #50/50 chance to increase or decrease
-        #normal distribution 0.85 - 1.15)
         priceIncDec = price - (abs(random.normalvariate(Mu, Sigma)) * price)
         if random.random() > IncreaseChance:
             newPrice = round(price - priceIncDec, 2)

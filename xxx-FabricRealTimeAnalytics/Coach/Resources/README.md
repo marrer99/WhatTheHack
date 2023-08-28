@@ -11,6 +11,7 @@ Steps:
 1. Login to the Azure portal and open the CLI (Command Line Interface)
 2. Upload the "fabricwth_armtemplate.json" and the "fabricwth_parameters.json" to the storage connected to the CLI.
 3. Navigate to those files in the command line.
+4. Change the  `fabricwth_parameters.json` parameters file to add a prefix to the EventHubsNamespace and the AzureContainerInstance name. They must be globally unique so make sure you don't have the same as another person.
 4. Run 
     - `az group create --name <resource-group-name> --location westus3`
     - You pick a name for the resource group.
