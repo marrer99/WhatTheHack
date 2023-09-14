@@ -11,8 +11,6 @@
 [< Previous Challenge](./Challenge-X-1.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-X+1.md)
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
-***This is a template for a single challenge. The italicized text provides hints & examples of what should or should NOT go in each section.  You should remove all italicized & sample text and replace with your content.***
-
 ## Introduction
 
 You've been tasked with creating some real time reporting using Power BI based on a data that is contantly being generated every second.
