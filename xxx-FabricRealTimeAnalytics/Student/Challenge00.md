@@ -35,7 +35,7 @@ Thank you for participating in the Fabric real time analytics WTH. Before you ca
 
 ## Description
 
-Here ar the innstructions for installing the arm template. This will create:
+Here are the innstructions for installing the arm template. This will create:
 
 - Event Hub namespace and Event Hub (EH)
 - Azure Container Instance (ACI)
