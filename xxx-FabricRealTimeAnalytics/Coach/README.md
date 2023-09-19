@@ -2,7 +2,7 @@
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
-# What The Hack - IoT Hack of the Century - Coach Guide
+# What The Hack - Fabric Real-time Analytics - Coach Guide
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
@@ -16,7 +16,7 @@ Welcome to the coach's guide for the IoT Hack of the Century What The Hack. Here
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
-This hack includes an optional [lecture presentation](Lectures.pptx) that features short presentations to introduce key topics associated with each challenge. It is recommended that the host present each short presentation before attendees kick off that challenge.
+It is recommended that the host present each short presentation before attendees kick off that challenge.
 
 **NOTE:** If you are a Hackathon participant, this is the answer guide. Don't cheat yourself by looking at these during the hack! Go learn something. :)
 
@@ -26,11 +26,12 @@ This hack includes an optional [lecture presentation](Lectures.pptx) that featur
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
-- Challenge 01: **[Title of Challenge](Coach/Solution-01.md)**
-  - Description of challenge
-- Challenge 02: **[Title of Challenge](Coach/Solution-02.md)**
-  - Description of challenge
-- Challenge 03: **[Title of Challenge](Coach/Solution-03.md)** - Description of challenge
+0. Challenge 00: **[Prerequisites](Coach/Solution00.md)**
+   - Getting the environment setup for the rest of the challenges
+1. Challenge 01: **[Ingesting the Data and Creating the Database](Coach/Solution01.md)**
+   - Creating a database to store the real-time data
+1. Challenge 02: **[Title of Challenge](Coach/Solution02.md)** - Description of challenge
+1. Challenge 03: **[Title of Challenge](Coach/Solution03.md)** - Description of challenge
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
 ## Coach Prerequisites
@@ -49,31 +50,19 @@ Always refer students to the [What The Hack website](https://aka.ms/wth) for the
 
 ### Additional Coach Prerequisites (Optional)
 
-_Please list any additional pre-event setup steps a coach would be required to set up such as, creating or hosting a shared dataset, or deploying a lab environment._
+It may be helpful to create the environment the day before or so. Since there is no script that will automatically create the coaches environment, you will have to go through it step by step just like the students.
 
 ## Azure Requirements
 
 This hack requires students to have access to an Azure subscription where they can create and consume Azure resources. These Azure requirements should be shared with a stakeholder in the organization that will be providing the Azure subscription(s) that will be used by the students.
 
-_Please list Azure subscription requirements._
-
-_For example:_
-
-- Azure resources that will be consumed by a student implementing the hack's challenges
-- Azure permissions required by a student to complete the hack's challenges.
-
 ## Suggested Hack Agenda (Optional)
 
-_This section is optional. You may wish to provide an estimate of how long each challenge should take for an average squad of students to complete and/or a proposal of how many challenges a coach should structure each session for a multi-session hack event. For example:_
-
 - Sample Day 1
-  - Challenge 1 (1 hour)
-  - Challenge 2 (30 mins)
+  - Challenge 0 (1 hour)
+  - Challenge 1 (2 hours)
+  - Challenge 2 (2  hours)
   - Challenge 3 (2 hours)
-- Sample Day 2
-  - Challenge 4 (45 mins)
-  - Challenge 5 (1 hour)
-  - Challenge 6 (45 mins)
 
 ## Repository Contents
 
@@ -83,7 +72,9 @@ _The default files & folders are listed below. You may add to this if you want t
   - Coach's Guide and related files
 - \`./Coach/Solutions\`
   - Solution files with completed example answers to a challenge
+- \`./Coach/Resources\`
+  - Docker files to recreate the docker container if necessary
 - \`./Student\`
   - Student's Challenge Guide
 - \`./Student/Resources\`
-  - Resource files, sample code, scripts, etc meant to be provided to students. (Must be packaged up by the coach and provided to students at start of event)
+  - Arm template files for deploying the event hub and azure container instance
