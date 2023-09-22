@@ -20,12 +20,31 @@ Unfortunatley Fabric does not allow template automation for the items inside of 
 
 The Learning Resource below have a useful tutorial to get you going if the steps laid out here are not enough.
 
-1. Enter into Fabric and create a new workspace.
-2. In the workspace create a new KQLDB.
-3. Make sure the `OneLake Folder` setting it turned on. This will write the KQLDB data out to the OneLake in parquet format.
-4. CLick get data and then Event Hubs.
-5. Follow the instructions to connect to the Event Hub created in the setup.
-6. Run a query on the database to verify the count of records is increasing.
+This takes a while, so do this right away:
+1. Change Admin settings to allow 1 second page refresh
+    - Capacity settings
+    - PBI Workloads
+
+Steps for MAA Fabric Real-time analytics:
+1. Create Fabric capacity
+2. Open PBI in the browser
+3. Create a workspace and assign it to the fabric capacity
+4. New resource, create kql db
+5. Turn on Onelake folder
+6. Get data from event hub
+	- Create new table name
+	- Create connection:
+		- Event hub namespace
+		- Event hub
+		- Sas key name
+		- Sas key
+	c. Event retrieval start date
+7. Create kql queryset
+8. Change Admin settings to allow 1 second page refresh
+	- Capacity settings
+	- PBI Workloads
+9. Create PBI report
+    - Setup auto page refresh
 
 ## Learning Resources
 
