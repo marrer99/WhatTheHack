@@ -18,7 +18,7 @@
 
 ## Introduction
 
-
+You've been tasked with creating some real time reporting using Power BI based on the data that is contantly being generated every second. In this challenge, 
 
 ## Description
 
