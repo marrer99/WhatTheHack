@@ -41,7 +41,7 @@ In this hack you will be solving the common business problem that companies have
 ## Contributors
 
 - Cameron Kahrs
-- Racheal Liu
+- Rachel Liu
 - Armando Marrero
 - Juan Llovet de Casso
 - Brian Hitney
