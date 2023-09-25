@@ -2,7 +2,7 @@
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
-# Challenge 01 - \<Title of Challenge> - Coach's Guide
+# Challenge 03 - \<Title of Challenge> - Coach's Guide
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
