@@ -27,7 +27,7 @@ To complete this challenge, verify that:
 - Your report page is auto-refreshing every second with the data your KQL DB is ingesting continiously. (Using a Count of Price card visual can help you check)
 
 ## Learning Resources
-[Power BI realtime admin settings](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh)
+[Power BI realtime settings](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh)
 
 ## Tips
 
