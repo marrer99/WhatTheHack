@@ -16,13 +16,10 @@
 
 ## Notes & Guidance
 
-This is the only section you need to include.
+This challenge completes the hack by setting up a PowerBI report that shows the incoming data to the KQL database at real time. 
 
-Use general non-bulleted text for the beginning of a solution area for this challenge
-
-- Then move into bullets
-  - And sub-bullets and even
-    - sub-sub-bullets
+- Creating the PowerBI report: The easiest way to do so is from the KQL database:
+   -  f
 
 Break things apart with more than one bullet list
 
