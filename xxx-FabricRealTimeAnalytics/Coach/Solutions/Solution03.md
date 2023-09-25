@@ -37,9 +37,3 @@ This challenge completes the hack by setting up a PowerBI report that shows the 
    -  At the bottom of those options, open the Page refresh dropdown an enter your desired page refresh interval (1 second)
    -  Click on "show details" to check how often the report page is refreshing
 
-Break things apart with more than one bullet list
-
-- Like this
-- One
-- Right
-- Here
