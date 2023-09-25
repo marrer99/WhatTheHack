@@ -2,7 +2,7 @@
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
-# Challenge 03 - \Create the Realtime Reporting - Coach's Guide
+# Challenge 03 - Create the Realtime Reporting - Coach's Guide
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
