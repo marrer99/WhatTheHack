@@ -33,6 +33,7 @@ To complete this challenge, verify that:
 These resources provide step by step instructions. Only use them if you have already attempted the challenge through you own exploring and trial and error. The above learning resource gives a brief explanation of the concept but does not provide the whole solution.
 
 [Visualize Real Time data with PowerBI | Fabric](https://learn.microsoft.com/en-us/fabric/real-time-analytics/create-powerbi-report)
+
 [Use data from a KQL Database with PowerBI | Fabric](https://learn.microsoft.com/en-us/fabric/real-time-analytics/power-bi-data-connector)
 
 
