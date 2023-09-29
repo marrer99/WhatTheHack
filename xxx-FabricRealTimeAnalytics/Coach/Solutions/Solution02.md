@@ -16,17 +16,29 @@
 
 ## Notes & Guidance
 
-This is the only section you need to include.
+In this challenge, students should be familiar with KQL and be able to query the real-time data in Stock Table as required with KQL.
 
-Use general non-bulleted text for the beginning of a solution area for this challenge
+Students should first create a KQL Queryset and select the Stock Table stored in the KQL Database.
 
-- Then move into bullets
-  - And sub-bullets and even
-    - sub-sub-bullets
+The query should be similar to the following:
+```
+stockmarket
+| order by timestamp asc
+| extend pricedifference = round(price - prev(price, 8), 2)
+| extend percentdifference = round(round(price - prev(price, 8), 2) / prev(price, 8), 4)
+```
 
-Break things apart with more than one bullet list
+For the advanced challenge part, students should create another KQL Queryset. You can take the following query as a reference:
+```
+stockmarket
+| order by timestamp asc
+| extend pricedifference = round(price - prev(price, 8), 2)
+| extend percentdifference = round(round(price - prev(price, 8), 2) / prev(price, 8), 4)
+| summarize arg_max(pricedifference, timestamp, price) by symbol
+```
 
-- Like this
-- One
-- Right
-- Here
+## Learning Resources
+
+- [Query data in a KQL queryset](https://learn.microsoft.com/en-us/fabric/real-time-analytics/kusto-query-set)
+- [Customize results in the KQL Queryset results grid](https://learn.microsoft.com/en-us/fabric/real-time-analytics/customize-results)
+- [KQL prev() function](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/prevfunction)
