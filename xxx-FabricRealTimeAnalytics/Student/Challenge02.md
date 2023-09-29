@@ -50,4 +50,4 @@ To complete this challenge successfully, you should be able to:
 Too comfortable?  Eager to do more?  Try these additional challenges!
 
 <!-- Group stocks by a certain grouping TDB-->
-- Create another KQL queryset and find out each the biggest price difference for each stock, and at what time it occured
+- Create another KQL queryset and find out the biggest price difference for each stock, and at what time it occured
