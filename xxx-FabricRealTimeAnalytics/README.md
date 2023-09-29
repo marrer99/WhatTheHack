@@ -29,8 +29,10 @@ In this hack you will be solving the common business problem that companies have
    - Getting the environment setup for the rest of the challenges
 1. Challenge 01: **[Ingesting the Data and Creating the Database](Student/Challenge01.md)**
    - Creating a database to store the real-time data
-1. Challenge 02: **[Title of Challenge](Student/Challenge02.md)** - Description of challenge
-1. Challenge 03: **[Create Realtime Reporting](Student/Challenge03.md)** - Creating the Real-time Power BI reports
+1. Challenge 02: **[Transforming the Data](Student/Challenge02.md)**
+   - Create a queryset to add information to the data
+1. Challenge 03: **[Create Realtime Reporting](Student/Challenge03.md)** 
+   - Creating the Real-time Power BI reports
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
 ## Prerequisites
@@ -46,3 +48,4 @@ In this hack you will be solving the common business problem that companies have
 - Juan Llovet de Casso
 - Brian Hitney
 - Pardeep Singla
+- Alan Kleinhart

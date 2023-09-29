@@ -36,10 +36,12 @@ To complete this challenge successfully, you should be able to:
 
 - [Query data in a KQL queryset](https://learn.microsoft.com/en-us/fabric/real-time-analytics/kusto-query-set)
 - [Customize results in the KQL Queryset results grid](https://learn.microsoft.com/en-us/fabric/real-time-analytics/customize-results)
+- [KQL prev() function](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/prevfunction)
 
 
 ## Tips
 
+- Starting with ordering the stocks in ascending timestamp order is very beneficial
 - You should add two columns in Stock Table: one for "pricedifference", and one for "percentpricedifference"
 - You can keep the price difference to two decimal places, and keep the price difference percent to four decimal places
 
@@ -47,5 +49,5 @@ To complete this challenge successfully, you should be able to:
 
 Too comfortable?  Eager to do more?  Try these additional challenges!
 
-- Group "symbol" column by stock
-- Find out each stock at what time has the biggest price difference
+<!-- Group stocks by a certain grouping TDB-->
+- Create another KQL queryset and find out each the biggest price difference for each stock, and at what time it occured

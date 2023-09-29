@@ -14,27 +14,29 @@
 
 ## Pre-requisites
 
-- Have your Stock Table ready and available on the KQL database, including the transformations on Challenge 2
+- Stock Table in the KQLDB
+- KQL Queryset with transformations 
 
 ## Description
 
-You've been tasked with creating some real time reporting using Power BI based on the data that is contantly being generated every second. In this challenge, you must bring in the data from the KQL database to PowerBI. You need to create visualizations that represent the incoming data, but you will also need to modify some settings to ensure that this is truly real-time reporting. 
+You've been tasked with creating some real time reporting using Power BI based on the data that is contantly being generated every second. In this challenge, you must bring in the data from the KQL database/queryset to PowerBI. You need to create visualizations that represent the incoming data, but you will also need to modify some settings to ensure that this is truly real-time reporting. 
 
 ## Success Criteria
 
 To complete this challenge, verify that:
 - You have a PowerBI report displaying the data from the Stock table.
-- Your report page is auto-refreshing every second with the data your KQL DB is ingesting continiously. (Using a Count of Price card visual can help you check)
+    - Line Graph showing the previous minute of data of each stocks price
+- Your report page is auto-refreshing every second with the data your KQL DB is ingesting continiously.
 
 ## Learning Resources
-[Power BI realtime settings](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh)
+- [Power BI Realtime Settings](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh)
+- [Creating a real-time dataset in the Fabric portal](https://learn.microsoft.com/en-us/fabric/real-time-analytics/create-powerbi-report)
+- [Creating a real-time dataset in Power BI Dekstop](https://learn.microsoft.com/en-us/fabric/real-time-analytics/power-bi-data-connector)
 
-## Tips (step by step instructions)
-These resources provide step by step instructions. Only use them if you have already attempted the challenge through you own exploring and trial and error. The above learning resource gives a brief explanation of the concept but does not provide the whole solution.
+## Tips
+- Use a Card that has the count of the number of records to help ensure data is being contantly updated in the report.
+- To get to the Fabric capacity settings you can go to the `Admin Portal` in Power BI and then on the far right click on `Fabric Capacity`. In there the `Automatic page refresh` setting should be under `Power BI Workloads`
+<!-- far easier to do the creating the dataset in the portal than PBI Desktop, but that tip may be giving too much away -->
 
-[Visualize Real Time data with PowerBI | Fabric](https://learn.microsoft.com/en-us/fabric/real-time-analytics/create-powerbi-report)
-
-[Use data from a KQL Database with PowerBI | Fabric](https://learn.microsoft.com/en-us/fabric/real-time-analytics/power-bi-data-connector)
-
-
-## Advanced Challenges (Optional)
+## Additional Challenges
+- Get creative with the Power BI report! What kind of visuals can you create?

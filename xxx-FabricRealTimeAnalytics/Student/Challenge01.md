@@ -23,7 +23,7 @@ In this challenge, you will create an data ingestion stream from the Event Hub t
 
 To complete this challenge successfully, you should be able to:
 - Create a data ingestion method for the Event Hub into Fabric
-- Create a database to store the Event Hub data
+- Create a database and a table to store the Event Hub data
 - Verify that data from the Event Hub is entering Fabric and being stored in the OneLake.
 
 ## Learning Resources
