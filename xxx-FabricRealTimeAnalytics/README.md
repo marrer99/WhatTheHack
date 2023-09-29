@@ -30,7 +30,7 @@ In this hack you will be solving the common business problem that companies have
 1. Challenge 01: **[Ingesting the Data and Creating the Database](Student/Challenge01.md)**
    - Creating a database to store the real-time data
 1. Challenge 02: **[Title of Challenge](Student/Challenge02.md)** - Description of challenge
-1. Challenge 03: **[Title of Challenge](Student/Challenge03.md)** - Description of challenge
+1. Challenge 03: **[Create Realtime Reporting](Student/Challenge03.md)** - Creating the Real-time Power BI reports
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
 ## Prerequisites

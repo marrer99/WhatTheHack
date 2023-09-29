@@ -1,14 +1,14 @@
 <!-- REMOVE_ME # Challenge ${suffixNumber} - <Title of Challenge> (remove this from your MD files if you are writing them manually, this is for the automation script) REMOVE_ME -->
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
-# Challenge 03 - Create the Realtime Reporting (Juan and Pardeep)
+# Challenge 03 - Create the Realtime Reporting
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
 <!-- REMOVE_ME ${navigationLine} (remove this from your MD files if you are writing them manually, this is for the automation script) REMOVE_ME -->
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 <!-- If you are using this template manually, ensure the navigation links below are updated to link to the previous and next challenges relative to the current challenge. The "Home" link should always link to the homepage of the hack which is the README.md in the hack's parent directory. -->
-[< Previous Challenge](./Challenge-X-1.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-X+1.md)
+[< Previous Challenge](./Challenge02.md) - **[Home](../README.md)**
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
 

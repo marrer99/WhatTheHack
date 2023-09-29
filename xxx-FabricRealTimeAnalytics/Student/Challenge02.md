@@ -8,7 +8,7 @@
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 <!-- If you are using this template manually, ensure the navigation links below are updated to link to the previous and next challenges relative to the current challenge. The "Home" link should always link to the homepage of the hack which is the README.md in the hack's parent directory. -->
-[< Previous Challenge](./Challenge-X-1.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-X+1.md)
+[< Previous Challenge](./Challenge01.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge03.md)
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
 
