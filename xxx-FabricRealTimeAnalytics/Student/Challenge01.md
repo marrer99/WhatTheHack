@@ -13,7 +13,7 @@
 
 ## Introduction
 
-You've been tasked with creating some real time reporting using Power BI based on the data that is contantly being generated every second.
+You've been tasked with creating some real time reporting using Power BI based on the data that is constantly being generated every second.
 
 ## Description
 
