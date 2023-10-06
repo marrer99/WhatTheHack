@@ -38,7 +38,7 @@ In this hack you will be solving the common business problem that companies have
 ## Prerequisites
 
 - An Azure subscription
-- Power BI Admin access (or ask you administator to change the page refresh settings to 1 second **[Link to Documentation](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh#restrictions-on-refresh-intervals)**)
+<!-- - Power BI Admin access (or ask you administator to change the page refresh settings to 1 second **[Link to Documentation](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh#restrictions-on-refresh-intervals)**) -->
 
 ## Contributors
 
