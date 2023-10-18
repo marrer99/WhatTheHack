@@ -35,7 +35,7 @@ Thank you for participating in the Fabric real time analytics WTH. Before you ca
 
 ## Description
 
-Here are the innstructions for installing the arm template. This will create:
+Here are the instructions for installing the arm template. This will create:
 
 - Event Hub namespace and Event Hub (EH)
 - Azure Container Instance (ACI)
@@ -46,7 +46,7 @@ The EH will get created first, then the ACI. The ACI will be started with a cont
 Steps:
 
 1. Login to the Azure portal and open the CLI (Command Line Interface)
-2. Upload the "fabricwth_armtemplate.json" and the "fabricwth_parameters.json" to the storage connected to the CLI.
+2. Upload the "fabricwth_armtemplate.json" and the "fabricwth_parameters.json" to the storage connected to the CLI. (Only one file can be uploaded at a time)
 3. Navigate to those files in the command line.
 4. Change the  `fabricwth_parameters.json` parameters file to add a prefix to the EventHubsNamespace and the AzureContainerInstance name. They must be globally unique so make sure you don't have the same as another person. PREFIX MUST BE LOWERCASE! REMOVE THE '<>' SYMBOLS!
 4. Run 
@@ -55,6 +55,7 @@ Steps:
 5. Run 
     - `az deployment group create --resource-group <resource-group-name> --template-file "fabricwth_armtemplate.json" --parameters "fabricwth_parameters.json"`
 6. You should now have a resource group in your azure subscription with the EH and ACI resources.
+8. Create a Fabric instance through the Azure portal. An F4 SKU is all that is needed.
 
 ## Success Criteria
 
@@ -63,4 +64,5 @@ To complete this challenge successfully, you should be able to:
 - Verify that the ARM template has deployed the following resources in Azure:
   - Event Hub Namespace
   - Event Hub (verify it is ingesting data from the container)
-  - Azure Container Instance (verify that it is running the docker container and data is streaming out)
+  - Azure Container Instance (verify that it is running the docker container and data is streaming out, go to logs to verify this)
+- Fabric instance running

@@ -5,7 +5,7 @@
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 <!-- If you are using and editing this template manually, ensure the navigation link below is updated to link to next challenge relative to the current challenge. The "Home" link should always link to the homepage of the hack which is the README.md in the hack's parent directory. -->
 
-**[Home](../README.md)** - [Next Challenge >](./Solution01.md)
+**[Home](./README.md)** - [Next Challenge >](./Solution01.md)
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
@@ -43,10 +43,13 @@ Here ar the innstructions for installing the arm template. This will create:
 The EH will get created first, then the ACI. The ACI will be started with a container from the Docker Hub "cameronkahrsdocker/fabricwthdatapumpv2" which will automatically stream event to the the EH created in the first step.
 
 ---
+
+Here is a video link of how to go through the setup, step by step: [MAA Fabric Realtime Analytics](https://www.youtube.com/watch?v=wGox1lf0ve0)
+
 Steps:
 
 1. Login to the Azure portal and open the CLI (Command Line Interface)
-2. Upload the "fabricwth_armtemplate.json" and the "fabricwth_parameters.json" to the storage connected to the CLI.
+2. Upload the "fabricwth_armtemplate.json" and the "fabricwth_parameters.json" to the storage connected to the CLI. (Only one file can be uploaded at a time)
 3. Navigate to those files in the command line.
 4. Change the  `fabricwth_parameters.json` parameters file to add a prefix to the EventHubsNamespace and the AzureContainerInstance name. They must be globally unique so make sure you don't have the same as another person. PREFIX MUST BE LOWERCASE! REMOVE THE '<>' SYMBOLS!
 4. Run 
@@ -55,6 +58,7 @@ Steps:
 5. Run 
     - `az deployment group create --resource-group <resource-group-name> --template-file "fabricwth_armtemplate.json" --parameters "fabricwth_parameters.json"`
 6. You should now have a resource group in your azure subscription with the EH and ACI resources.
+8. Create a Fabric instance through the Azure portal. An F4 SKU is all that is needed.
 
 ## Success Criteria
 
@@ -63,4 +67,5 @@ To complete this challenge successfully, you should be able to:
 - Verify that the ARM template has deployed the following resources in Azure:
   - Event Hub Namespace
   - Event Hub (verify it is ingesting data from the container)
-  - Azure Container Instance (verify that it is running the docker container and data is streaming out)
+  - Azure Container Instance (verify that it is running the docker container and data is streaming out, go to logs to verify this)
+- Fabric instance running

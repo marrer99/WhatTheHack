@@ -14,6 +14,21 @@
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
+## Setup Steps
+
+Steps for MAA Fabric Real-time analytics setup:
+
+1. Get data from event hub
+	- Create new table name
+	- Create connection:
+		- Event hub namespace
+		- Event hub
+		- Sas key name
+		- Sas key
+	- Event retrieval start date (under more parameters)
+	- Schema should be JSON with no nested values
+7. Create kql queryset
+
 ## Notes & Guidance
 
 In this challenge, students should be familiar with KQL and be able to query the real-time data in Stock Table as required with KQL.

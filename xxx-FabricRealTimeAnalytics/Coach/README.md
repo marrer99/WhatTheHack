@@ -26,13 +26,17 @@ It is recommended that the host present each short presentation before attendees
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
-0. Challenge 00: **[Prerequisites](Coach/Solution00.md)**
+0. Challenge 00: **[Prerequisites](Coach/Solutions/Solution00.md)**
    - Getting the environment setup for the rest of the challenges
-1. Challenge 01: **[Ingesting the Data and Creating the Database](Coach/Solution01.md)**
+1. Challenge 01: **[Ingesting the Data and Creating the Database](Coach/Solutions/Solution01.md)**
    - Creating a database to store the real-time data
-1. Challenge 02: **[Title of Challenge](Coach/Solution02.md)** - Description of challenge
-1. Challenge 03: **[Title of Challenge](Coach/Solution03.md)** - Description of challenge
+1. Challenge 02: **[Transforming the Data](Coach/Solutions/Solution02.md)**
+    - Transforming the data using KQL Querysets
+1. Challenge 03: **[Create the Realtime Reporting](Coach/Solutions/Solution03.md)**
+    - Creating the Power BI reports, with real-time data
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
+
+Here is a video link of how to go through the setup, step by step: [MAA Fabric Realtime Analytics](https://www.youtube.com/watch?v=wGox1lf0ve0)
 
 ## Coach Prerequisites
 

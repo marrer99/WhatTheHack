@@ -14,37 +14,26 @@
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
+## Setup Steps
+
+Steps for MAA Fabric Real-time analytics:
+1. Create Fabric capacity
+1. Change Admin settings to allow 1 second page refresh
+    - Capacity settings
+    - PBI Workloads
+2. Open PBI in the browser
+3. Create a workspace and assign it to the fabric capacity
+4. New resource, create kql db
+5. Turn on Onelake folder
+
 ## Notes & Guidance
 
 Unfortunatley Fabric does not allow template automation for the items inside of it, so you will have to follow along with the students to create the example from scratch as they are doing.
 
 The Learning Resource below have a useful tutorial to get you going if the steps laid out here are not enough.
 
-This takes a while, so do this right away:
-1. Change Admin settings to allow 1 second page refresh
-    - Capacity settings
-    - PBI Workloads
 
-Steps for MAA Fabric Real-time analytics:
-1. Create Fabric capacity
-2. Open PBI in the browser
-3. Create a workspace and assign it to the fabric capacity
-4. New resource, create kql db
-5. Turn on Onelake folder
-6. Get data from event hub
-	- Create new table name
-	- Create connection:
-		- Event hub namespace
-		- Event hub
-		- Sas key name
-		- Sas key
-	c. Event retrieval start date
-7. Create kql queryset
-8. Change Admin settings to allow 1 second page refresh
-	- Capacity settings
-	- PBI Workloads
-9. Create PBI report
-    - Setup auto page refresh
+
 
 ## Learning Resources
 

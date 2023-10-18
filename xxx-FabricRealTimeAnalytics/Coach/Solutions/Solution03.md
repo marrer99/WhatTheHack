@@ -14,6 +14,14 @@
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
+## Setup Steps
+
+1. Change Admin settings to allow 1 second page refresh
+   - Capacity settings
+   - PBI Workloads
+2. Create PBI report
+   - Setup auto page refresh
+
 ## Notes & Guidance
 
 This challenge completes the hack by setting up a PowerBI report that shows the incoming data to the KQL database at real time. 
@@ -21,7 +29,7 @@ This challenge completes the hack by setting up a PowerBI report that shows the 
 - Creating the PowerBI report: The easiest way to do so is from the KQL queryset:
    -  Navigate to the KQL Queryset made in the previous challenge
    -  On the `KQL Queryset` menu in the ribbon, select `Build Power BI Report`
-   -  The report can be created in the following pop-up, or edited in full screen after being created. The one requirement, before exiting out of this pop-up, is clicking on the top right "File" dropdown menu and selecting "Save". Student should create the required visuals as per the challenge.
+   -  The report can be saved in the following pop-up, or edited in full screen after being saved. The one requirement, before exiting out of this pop-up, is clicking on the top right "File" dropdown menu and selecting "Save". Student should create the required visuals as per the challenge.
    -  Give the report a name and place it in workspace (recommended to be the same one that already contains the KQL database)
  
 - Adjusting the page refresh settings (admin):
