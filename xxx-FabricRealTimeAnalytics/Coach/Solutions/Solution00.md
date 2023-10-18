@@ -5,7 +5,7 @@
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 <!-- If you are using and editing this template manually, ensure the navigation link below is updated to link to next challenge relative to the current challenge. The "Home" link should always link to the homepage of the hack which is the README.md in the hack's parent directory. -->
 
-**[Home](./Coach/README.md)** - [Next Challenge >](./Solution01.md)
+**[Home](/xxx-FabricRealTimeAnalytics/Coach/README.md)** - [Next Challenge >](./Solution01.md)
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
