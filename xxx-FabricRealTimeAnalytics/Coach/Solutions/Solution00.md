@@ -5,7 +5,7 @@
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 <!-- If you are using and editing this template manually, ensure the navigation link below is updated to link to next challenge relative to the current challenge. The "Home" link should always link to the homepage of the hack which is the README.md in the hack's parent directory. -->
 
-**[Home](/xxx-FabricRealTimeAnalytics/Coach/README.md)** - [Next Challenge >](./Solution01.md)
+**[Home](/../../README.md)** - [Next Solution >](./Solution01.md)
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
@@ -23,7 +23,7 @@ Thank you for participating in the Fabric real time analytics WTH. Before you ca
 
 <!-- If you are editing this template manually, be aware that these links are only designed to work if this Markdown file is in the /xxx-HackName/Student/ folder of your hack. -->
 
-- [Azure Subscription](../../000-HowToHack/WTH-Common-Prerequisites.md#azure-subscription)
+- [Azure Subscription](../../../000-HowToHack/WTH-Common-Prerequisites.md#azure-subscription)
 - [Managing Cloud Resources](../../000-HowToHack/WTH-Common-Prerequisites.md#managing-cloud-resources)
   - [Azure Portal](../../000-HowToHack/WTH-Common-Prerequisites.md#azure-portal)
   - [Azure CLI](../../000-HowToHack/WTH-Common-Prerequisites.md#azure-cli)
