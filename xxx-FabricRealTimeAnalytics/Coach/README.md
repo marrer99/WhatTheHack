@@ -70,9 +70,9 @@ This hack requires students to have access to an Azure subscription where they c
 
 ## Architecture Diagrams
 
-![Architecture 1](Coach/Resources/Images/ArchitectureSlide1.png)
+![Architecture 1](Resources/Images/ArchitectureSlide1.png)
 
-![Architecture 2](Coach/Resources/Images/ArchitectureSlide2.png)
+![Architecture 2](Resources/Images/ArchitectureSlide2.png)
 
 ## Repository Contents
 
