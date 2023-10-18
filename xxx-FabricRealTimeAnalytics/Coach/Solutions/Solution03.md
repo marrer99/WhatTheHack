@@ -10,7 +10,7 @@
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
-[< Previous Solution](./Solution02.md) - **[Home](../README.md)**
+[< Previous Solution](./Solution02.md) - **[Home](.../README.md)**
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
