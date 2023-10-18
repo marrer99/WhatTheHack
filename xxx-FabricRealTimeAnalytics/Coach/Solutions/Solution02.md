@@ -10,7 +10,7 @@
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
-[< Previous Solution](./Solution01.md) - **[Home](/xxx-FabricRealTimeAnalytics/Coach/README.md)** - [Next Solution >](./Solution03.md)
+[< Previous Solution](./Solution01.md) - **[Home](../README.md)** - [Next Solution >](./Solution03.md)
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
