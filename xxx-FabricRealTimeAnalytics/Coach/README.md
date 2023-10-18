@@ -68,6 +68,12 @@ This hack requires students to have access to an Azure subscription where they c
   - Challenge 2 (2  hours)
   - Challenge 3 (2 hours)
 
+## Architecture Diagrams
+
+![Architecture 1](Coach/Resources/Images/ArchitectureSlide1.png)
+
+![Architecture 2](Coach/Resources/Images/ArchitectureSlide2.png)
+
 ## Repository Contents
 
 _The default files & folders are listed below. You may add to this if you want to specify what is in additional sub-folders you may add._
