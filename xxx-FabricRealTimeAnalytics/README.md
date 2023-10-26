@@ -38,13 +38,13 @@ In this hack you will be solving the common business problem that companies have
 3. Challenge 03: **[Create Realtime Reporting](Student/Challenge03.md)** 
    - Creating the Real-time Power BI reports
 4. Challenge 04: **[Create a Fabric Warehouse to ingest data from the KQL DB near real-time](Student/Challenge04.md)** 
-   - Creating the Real-time Power BI reports
+   - Creating a Fabric warehouse and a pipeline to ingest data in near rea-time
 5. Challenge 05: **[Create two dimension tables and the store procedures to populate them](Student/Challenge05.md)** 
-   - Creating the Real-time Power BI reports
+   - Creating Dimension tables
 6. Challenge 06: **[Create a fact table and the stored procedure to populate it](Student/Challenge06.md)** 
-   - Creating the Real-time Power BI reports
+   - Creating Fact tables 
 7. Challenge 07: **[ Create the Analytics Reporting](Student/Challenge07.md)** 
-   - Creating the Real-time Power BI reports
+   - Creating the near Real-time Power BI report
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 

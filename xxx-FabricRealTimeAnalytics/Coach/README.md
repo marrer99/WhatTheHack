@@ -30,10 +30,18 @@ It is recommended that the host present each short presentation before attendees
    - Getting the environment setup for the rest of the challenges
 1. Challenge 01: **[Ingesting the Data and Creating the Database](Solutions/Solution01.md)**
    - Creating a database to store the real-time data
-1. Challenge 02: **[Transforming the Data](Solutions/Solution02.md)**
+2. Challenge 02: **[Transforming the Data](Solutions/Solution02.md)**
     - Transforming the data using KQL Querysets
-1. Challenge 03: **[Create the Realtime Reporting](Solutions/Solution03.md)**
+3. Challenge 03: **[Create the Realtime Reporting](Solutions/Solution03.md)**
     - Creating the Power BI reports, with real-time data
+4. Challenge 04: **[Create a Fabric Warehouse to ingest data from the KQL DB near real-time](Solutions/Solution04.md)** 
+   - Creating a Fabric warehouse and a pipeline to ingest data in near rea-time
+5. Challenge 05: **[Create two dimension tables and the store procedures to populate them](Solutions/Solution05.md)** 
+   - Creating Dimension tables
+6. Challenge 06: **[Create a fact table and the stored procedure to populate it](Solutions/Solution06.md)** 
+   - Creating Fact tables 
+7. Challenge 07: **[ Create the Analytics Reporting](Solutions/Solution07.md)** 
+   - Creating a near Real-time Power BI report
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
 Here is a video link of how to go through the setup, step by step: [MAA Fabric Realtime Analytics](https://www.youtube.com/watch?v=wGox1lf0ve0)
