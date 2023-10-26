@@ -1,4 +1,4 @@
-# Challenge 04 - Ingesting data in Fabric warehouse
+# Challenge 04 - Create a Fabric Warehouse to ingest data from the KQL DB near real-time
 
 <!-- REMOVE_ME ${navigationLine} (remove this from your MD files if you are writing them manually, this is for the automation script) REMOVE_ME -->
 

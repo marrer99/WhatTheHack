@@ -12,12 +12,16 @@ The AbboCost Financial group monitors several crazy stocks! Because of the volit
 
 ## Learning Objectives
 
-In this hack you will be solving the common business problem that companies have surronding creating real-time reporting solutions:
+In this hack you will be solving the common business problem that companies have surronding creating real-time and near real-time reporting solutions:
 
 1. Provision a Fabric instance
 2. Create a database to ingest data
 3. Create querys and add analysis to the data
 4. Create real-time reporting, with up to the second data
+5. Create a Fabric Warehouse to ingest data from the KQL DB near real-time
+6. Create a data pipeline
+7. Create Dimension and fact tables in warehouse
+
 
 ## Challenges
 
@@ -25,14 +29,7 @@ In this hack you will be solving the common business problem that companies have
 
 <!-- REPLACE_ME (replace this section with your text, this section will be removed by the automation script) -->
 
-0. Challenge 00: **[Prerequisites](Student/Challenge00.md)**
-   - Getting the environment setup for the rest of the challenges
-1. Challenge 01: **[Ingesting the Data and Creating the Database](Student/Challenge01.md)**
-   - Creating a database to store the real-time data
-1. Challenge 02: **[Transforming the Data](Student/Challenge02.md)**
-   - Create a queryset to add information to the data
-1. Challenge 03: **[Create Realtime Reporting](Student/Challenge03.md)** 
-   - Creating the Real-time Power BI reports
+
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
 ## Prerequisites
