@@ -29,6 +29,22 @@ In this hack you will be solving the common business problem that companies have
 
 <!-- REPLACE_ME (replace this section with your text, this section will be removed by the automation script) -->
 
+0. Challenge 00: **[Prerequisites](Student/Challenge00.md)**
+   - Getting the environment setup for the rest of the challenges
+1. Challenge 01: **[Ingesting the Data and Creating the Database](Student/Challenge01.md)**
+   - Creating a database to store the real-time data
+2. Challenge 02: **[Transforming the Data](Student/Challenge02.md)**
+   - Create a queryset to add information to the data
+3. Challenge 03: **[Create Realtime Reporting](Student/Challenge03.md)** 
+   - Creating the Real-time Power BI reports
+4. Challenge 04: **[Create a Fabric Warehouse to ingest data from the KQL DB near real-time](Student/Challenge04.md)** 
+   - Creating the Real-time Power BI reports
+5. Challenge 05: **[Create two dimension tables and the store procedures to populate them](Student/Challenge05.md)** 
+   - Creating the Real-time Power BI reports
+6. Challenge 06: **[Create a fact table and the stored procedure to populate it](Student/Challenge06.md)** 
+   - Creating the Real-time Power BI reports
+7. Challenge 07: **[ Create the Analytics Reporting](Student/Challenge07.md)** 
+   - Creating the Real-time Power BI reports
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
