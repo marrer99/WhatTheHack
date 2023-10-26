@@ -1,4 +1,4 @@
-# Challenge 04 - Prerequisites - Ready, Set, GO!
+# Challenge 04 - Ingesting data in Fabric warehouse
 
 <!-- REMOVE_ME ${navigationLine} (remove this from your MD files if you are writing them manually, this is for the automation script) REMOVE_ME -->
 
