@@ -34,7 +34,7 @@ To successfully complete this challenge, you should ensure the following:
 
 - The fact_Stocks_Daily_Prices table is created and populated with relevant data.
 - You have incorporated a step within the data ingestion pipeline to populate the fact_Stocks_Daily_Prices table.
-- You have added these three tables to default dataset and created the relationships connecting them and hiding any attribute in the tables that are not    business related, like SK, etc
+- You have added three tables ( 2 dimensions and 1 fact table) to default dataset and created the relationships connecting them and hiding any attribute in the     tables that are not business related, like SK, etc
 
 
 ## Learning Resources

@@ -18,14 +18,14 @@
 
 ## Description
 
-Your assignment involves the development of analytics reporting within Power BI, utilizing the data from the warehouse's semantic layer (Default dataset). In this challenge, your objective is to construct visual representations of the incoming data and incorporate visual components to facilitate data exploration.
+Your assignment involves the development of analytics reporting in Power BI, utilizing the data from the warehouse's semantic layer (Default dataset). In this challenge, your objective is to construct visual representations of the incoming data and incorporate visual components to facilitate data exploration.
 
 ## Success Criteria
 
 To successfully fulfill this challenge, please ensure the following:
 
 You have created a Power BI report that effectively displays the dataset.
--   A line graph that displays daily averages of Min Price and Max Price.
+-   two line graphs that displays daily averages of Min Price and Max Price.
 -   Incorporation of at least one visual component that enables data slicing.
 -   Your report page is configured to automatically refresh every 5 minutes, ensuring up-to-date information.
 
