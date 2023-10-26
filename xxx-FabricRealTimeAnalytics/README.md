@@ -21,6 +21,7 @@ In this hack you will be solving the common business problem that companies have
 5. Create a Fabric Warehouse to ingest data from the KQL DB near real-time
 6. Create a data pipeline
 7. Create Dimension and fact tables in warehouse
+8. Create/Update the semantic model
 
 
 ## Challenges
@@ -39,7 +40,7 @@ In this hack you will be solving the common business problem that companies have
    - Creating the Real-time Power BI reports
 4. Challenge 04: **[Create a Fabric Warehouse to ingest data from the KQL DB near real-time](Student/Challenge04.md)** 
    - Creating a Fabric warehouse and a pipeline to ingest data in near rea-time
-5. Challenge 05: **[Create two dimension tables and the store procedures to populate them](Student/Challenge05.md)** 
+5. Challenge 05: **[Create two dimension tables and the stored procedures to populate them](Student/Challenge05.md)** 
    - Creating Dimension tables
 6. Challenge 06: **[Create a fact table and the stored procedure to populate it](Student/Challenge06.md)** 
    - Creating Fact tables 

@@ -36,7 +36,7 @@ It is recommended that the host present each short presentation before attendees
     - Creating the Power BI reports, with real-time data
 4. Challenge 04: **[Create a Fabric Warehouse to ingest data from the KQL DB near real-time](Solutions/Solution04.md)** 
    - Creating a Fabric warehouse and a pipeline to ingest data in near rea-time
-5. Challenge 05: **[Create two dimension tables and the store procedures to populate them](Solutions/Solution05.md)** 
+5. Challenge 05: **[Create two dimension tables and the stored procedures to populate them](Solutions/Solution05.md)** 
    - Creating Dimension tables
 6. Challenge 06: **[Create a fact table and the stored procedure to populate it](Solutions/Solution06.md)** 
    - Creating Fact tables 
