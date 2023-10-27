@@ -36,18 +36,17 @@ Thank you for participating in the Fabric real time analytics WTH. Before you ca
 ## Description
 
 Steps
-1. Run: <../Resources/Warehouse solution files/Create Views.sql>
 
-2. Run : <../Resources/Warehouse solution files/ETL.sp_Fact_Stocks_Daily_Prices_Load.sql> 
+1. Run : <../Resources/Warehouse solution files/ETL.sp_Fact_Stocks_Daily_Prices_Load.sql> 
     
-3. Add a stored procedure activity
+2. Add a stored procedure activity
     name: Populate Fact Stocks Prices
     settings:
       stored procedure name: ETL.sp_Fact_Stocks_Daily_Prices_Load
 
-4. Connect Populate Symbols Dimension on success output to the newly added stored procedure activity
+3. Connect Populate Symbols Dimension on success output to the newly added stored procedure activity
 
-5. Open Warehouse and navigate to Model
+4. Open Warehouse and navigate to Model
     - Hide all non business related attributes
     - Hide extra tables, views, keeping visible essentials attributes in the two dimensions and the fact table
     - Create relationships from the fact table to the dimensions

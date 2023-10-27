@@ -36,23 +36,24 @@ Thank you for participating in the Fabric real time analytics WTH. Before you ca
 ## Description
 
 Steps 
+- Create a Fabric Warehouse
 - Run : <../Resources/Warehouse solution files/Create stocks and metadata tables.sql>
+- Run : <../Resources/Warehouse solution files/ETL.sp_IngestSourceInfo_Update.sql>
 - Create Data pipeline
   Note: All activities to get created in this pipeline are connected in serial order on sucess output , including the ones inside For Each activity
 
- 1. Create a Fabric Warehouse
+ 1. Click on GetData/New Data Pipeline , name it : PL_Refresh_DWH
 
- 2. Click on GetData/New Data Pipeline , name it : PL_Refresh_DWH
-
- 3. Add a Lookup activity to the canvas, 
+ 2. Add a Lookup activity to the canvas, 
       name: Get WaterMark
       Settings: 
         Query:  SELECT * FROM [ETL].[IngestSourceInfo] WHERE IsActiveFlag = 'Y'
+        First Row Only: UnCheck
 
- 4. Add For Each Activity 
+ 3. Add For Each Activity 
     Settings: 
       items: @activity('Get WaterMark').output.value
-    4.1  Add a Copy Data activity      
+    3.1  Add a Copy Data activity      
       Source: KQL Database
       KQL Database: Choose Stockmarket_KQLDB created on previous challenges
       Query: 
@@ -61,11 +62,14 @@ Steps
         | where todatetime(timestamp) >= todatetime(''', item().WaterMark,''') 
         | project symbol, timestamp, price, datestamp
         | take 500000 ' )
-    4.2  Add a Lookup Activity
+      Destination: 
+        Table: StocksPrices
+        Pre-copy script : Delete stg.StocksPrices
+    3.2  Add a Lookup Activity
           Name: Get New WaterMark
           Settings:
             Query: @concat('Select Max(timestamp) as WaterMark from stg.', item().ObjectName)
-    4.3 Add a store procedure activity
+    3.3 Add a store procedure activity
         name: Update WaterMark
         settings:
           stored procedure name: ETL.sp_IngestSourceInfo_Update
@@ -73,7 +77,7 @@ Steps
             ObjectName: @item().ObjectName
             WaterMark: @activity('Get New WaterMark').output.firstRow.WaterMark
 
-  5. Configure Pipeline Schedule to run every 5 minutes
+  4. Configure Pipeline Schedule to run every 5 minutes
 
 
 ## Success Criteria

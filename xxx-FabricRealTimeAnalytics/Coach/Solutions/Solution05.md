@@ -36,17 +36,20 @@ Thank you for participating in the Fabric real time analytics WTH. Before you ca
 ## Description
 
 Steps
+1. Run : <../Resources/Warehouse solution files/Create Dimension and Fact tables.sql>
 1. Run :  <../Resources/Warehouse solution files/ETL.sp_Dim_Date_Load.sql>
+
 2. Exec ETL.sp_Dim_Date_Load 
-    Parameters: 
-        @BeginDate: Previous month first date
-        @EndDate: Next month last date
-3. Run: <../Resources/Warehouse solution files/ETL.sp_Dim_Symbol_Load.sql>
-3. Add a stored procedure activity
+3. Run: <../Resources/Warehouse solution files/Create Views.sql>
+
+4. Run: <../Resources/Warehouse solution files/ETL.sp_Dim_Symbol_Load.sql>
+
+5. Add a stored procedure activity
     name: Populate Symbols Dimension
     settings:
       stored procedure name: ETL.sp_Dim_Symbol_Load
-4. Connect for each activity on success output to the newly added stored procedure activity
+      
+6. Connect for each activity on success output to the newly added stored procedure activity
 
 
 ---

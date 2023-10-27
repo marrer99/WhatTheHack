@@ -1,9 +1,11 @@
 /*******************************************************/
 CREATE PROC [ETL].[sp_Dim_Date_Load]
-@BeginDate DATE = '09/01/2023'
-,@EndDate DATE = '12/31/2023'
+@BeginDate DATE  
+,@EndDate DATE 
 AS
 BEGIN
+Select @BeginDate  = ISNULL(@BeginDate, DATEADD ( DAY , 1 , EOMONTH ( GETDATE ( ) , - 2 ) ))
+Select @EndDate = ISNULL(@EndDate,EOMONTH ( GETDATE ( ) , 1 ))
 Declare @NumberOfDates int = Datediff(day,@BeginDate, @EndDate)
 --select @NumberOfDates
 
@@ -19,7 +21,6 @@ begin
     ) Dates
 
     SET @NumberOfDates = @NumberOfDates - 1
-
 end
 END
 GO
