@@ -1,7 +1,7 @@
 <!-- REMOVE_ME # Challenge ${suffixNumber} - <Title of Challenge> (remove this from your MD files if you are writing them manually, this is for the automation script) REMOVE_ME -->
 
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
-# Challenge 05 - Create two dimension tables and the store procedures to populate them
+# Challenge 05 - Create two dimension tables and the stored procedures to populate them
 <!-- REPLACE_ME (this section will be removed by the automation script) -->
 
 <!-- REMOVE_ME ${navigationLine} (remove this from your MD files if you are writing them manually, this is for the automation script) REMOVE_ME -->

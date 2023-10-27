@@ -1,4 +1,4 @@
-# Challenge 05 - Create two dimension tables and the store procedures to populate them
+# Challenge 05 - Create two dimension tables and the stored procedures to populate them
 
 <!-- REMOVE_ME ${navigationLine} (remove this from your MD files if you are writing them manually, this is for the automation script) REMOVE_ME -->
 
@@ -48,7 +48,7 @@ Steps
     name: Populate Symbols Dimension
     settings:
       stored procedure name: ETL.sp_Dim_Symbol_Load
-      
+
 6. Connect for each activity on success output to the newly added stored procedure activity
 
 

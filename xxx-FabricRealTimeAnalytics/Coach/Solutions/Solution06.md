@@ -1,4 +1,4 @@
-# Challenge 06 - Create a fact table and the store procedures to populate it
+# Challenge 06 - Create a fact table and the stored procedure to populate it
 
 <!-- REMOVE_ME ${navigationLine} (remove this from your MD files if you are writing them manually, this is for the automation script) REMOVE_ME -->
 
