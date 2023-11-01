@@ -22,4 +22,4 @@ Create table ETL.IngestSourceInfo
 )
 
 INSERT [ETL].[IngestSourceInfo]
-Select 'StocksPrices', '12/31/2022 23:59:59', 'Y'
+SELECT 'StocksPrices', '12/31/2022 23:59:59', 'Y'

@@ -4,14 +4,14 @@ CREATE PROC [ETL].[sp_Dim_Date_Load]
 ,@EndDate DATE = NULL
 AS
 BEGIN
-Select @BeginDate  = ISNULL(@BeginDate, DATEADD ( DAY , 1 , EOMONTH ( GETDATE ( ) , - 2 ) ))
-Select @EndDate = ISNULL(@EndDate,EOMONTH ( GETDATE ( ) , 1 ))
-Declare @NumberOfDates int = Datediff(day,@BeginDate, @EndDate)
+SELECT @BeginDate  = ISNULL(@BeginDate, DATEADD ( DAY , 1 , EOMONTH ( GETDATE ( ) , - 2 ) ))
+SELECT @EndDate = ISNULL(@EndDate,EOMONTH ( GETDATE ( ) , 1 ))
+DECLARE @NumberOfDates INT = Datediff(day,@BeginDate, @EndDate)
 --select @NumberOfDates
 
 WHILE @NumberOfDates > 0 
-begin
-    Insert Into [dbo].[dim_Date]
+BEGIN
+    INSERT INTO [dbo].[dim_Date]
     SELECT DateKey
     ,Datepart(dd,DateKey) as DayOfMonth
     ,FORMAT(DateKey, 'MMMM') as MonthName
@@ -21,6 +21,6 @@ begin
     ) Dates
 
     SET @NumberOfDates = @NumberOfDates - 1
-end
+END
 END
 GO
