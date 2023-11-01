@@ -57,11 +57,12 @@ Steps
       Source: KQL Database
       KQL Database: Choose Stockmarket_KQLDB created on previous challenges
       Query: 
-        @concat('stocks
-        | extend datestamp = substring(timestamp,0,10)
-        | where todatetime(timestamp) >= todatetime(''', item().WaterMark,''') 
-        | project symbol, timestamp, price, datestamp
-        | take 500000 ' )
+        @concat('stocks 
+          | where todatetime(timestamp) >= todatetime(''', item().WaterMark,''') 
+          | order by timestamp asc
+          | extend datestamp = substring(timestamp,0,10) 
+          | project symbol, timestamp, price, datestamp 
+          | take 500000 ' )
       Destination: 
         Table: StocksPrices
         Pre-copy script : Delete stg.StocksPrices
