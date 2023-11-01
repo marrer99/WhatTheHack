@@ -1,7 +1,7 @@
 /*******************************************************/
 CREATE PROC [ETL].[sp_Dim_Date_Load]
-@BeginDate DATE  
-,@EndDate DATE 
+@BeginDate DATE  = NULL
+,@EndDate DATE = NULL
 AS
 BEGIN
 Select @BeginDate  = ISNULL(@BeginDate, DATEADD ( DAY , 1 , EOMONTH ( GETDATE ( ) , - 2 ) ))
