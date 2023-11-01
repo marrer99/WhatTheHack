@@ -7,6 +7,7 @@ CREATE TABLE dbo.fact_Stocks_Daily_Prices
    ,PriceDateKey DATE NOT NULL
    ,MinPrice FLOAT NOT NULL
    ,MaxPrice FLOAT NOT NULL
+   ,ClosePrice FLOAT NOT NULL
 )
 GO
 

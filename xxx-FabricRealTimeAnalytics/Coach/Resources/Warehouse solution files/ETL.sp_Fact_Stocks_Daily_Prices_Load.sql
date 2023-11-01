@@ -27,6 +27,11 @@ BEGIN TRANSACTION
                         WHEN oldf.MaxPrice IS NULL THEN newf.MaxPrice
                         ELSE CASE WHEN newf.MaxPrice > oldf.MaxPrice THEN newf.MaxPrice ELSE oldf.MaxPrice END
                     END
+         ,ClosePrice = CASE 
+                        WHEN newf.ClosePrice IS NULL THEN oldf.ClosePrice
+                        WHEN oldf.ClosePrice IS NULL THEN newf.ClosePrice
+                        ELSE newf.ClosePrice
+                    END
     FROM 
         [stg].[vw_StocksDailyPricesEX] newf
     FULL OUTER JOIN
