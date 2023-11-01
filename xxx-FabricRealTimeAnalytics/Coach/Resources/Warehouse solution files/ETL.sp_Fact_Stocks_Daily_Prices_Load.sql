@@ -14,7 +14,7 @@ BEGIN TRANSACTION
     CREATE TABLE [dbo].[fact_Stocks_Daily_Prices]
     AS 
     (SELECT
-        Row_Number() Over (ORDER BY ISNULL(newf.Symbol_SK, oldf.Symbol_SK)) as StocksDailyPrice_SK
+        ROW_NUMBER() Over (ORDER BY ISNULL(newf.Symbol_SK, oldf.Symbol_SK)) as StocksDailyPrice_SK
         ,ISNULL(newf.Symbol_SK, oldf.Symbol_SK) as Symbol_SK
         ,ISNULL(newf.PriceDateKey, oldf.PriceDateKey) as PriceDateKey
         ,MinPrice = CASE 
