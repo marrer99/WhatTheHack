@@ -62,7 +62,9 @@ Steps
           | order by timestamp asc
           | extend datestamp = substring(timestamp,0,10) 
           | project symbol, timestamp, price, datestamp 
-          | take 500000 ' )
+          | take 500000 
+          | where not(isnull(price))
+          ' )
       Destination: 
         Table: StocksPrices
         Pre-copy script : Delete stg.StocksPrices

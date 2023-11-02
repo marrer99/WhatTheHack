@@ -1,7 +1,7 @@
 -- STAGING TABLES
 CREATE SCHEMA stg
 
-go
+GO
 
 CREATE TABLE stg.StocksPrices
 (
@@ -11,10 +11,11 @@ CREATE TABLE stg.StocksPrices
    ,datestamp VARCHAR(12) NOT NULL
 )
 
--- ETL TABLES
-Create SCHEMA ETL
 GO
-Create table ETL.IngestSourceInfo
+-- ETL TABLES
+CREATE SCHEMA ETL
+GO
+CREATE TABLE ETL.IngestSourceInfo
 (
     ObjectName VARCHAR(50) NOT NULL
     ,WaterMark DATETIME2(6)

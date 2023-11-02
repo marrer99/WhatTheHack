@@ -16,13 +16,13 @@ FROM
     (SELECT DISTINCT
     sdp.Symbol 
     , Name  = 'Stock ' + sdp.Symbol 
-    , Market = case substring(Symbol,1,1)
-                when 'B' then 'NASDAQ'
-                when 'W' then 'NASDAQ'
-                when 'I' then 'DOJ'
-                when 'T' then 'SP500'
-                else 'No Market'
-                end
+    , Market = CASE SUBSTRING(Symbol,1,1)
+                    WHEN 'B' THEN 'NASDAQ'
+                    WHEN 'W' THEN 'NASDAQ'
+                    WHEN 'I' THEN 'DOJ'
+                    WHEN 'T' THEN 'SP500'
+                    ELSE 'No Market'
+                END
     FROM 
         [stg].[vw_StocksDailyPrices] sdp
     WHERE 

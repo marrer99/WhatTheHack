@@ -18,7 +18,7 @@ CREATE TABLE dbo.dim_Symbol
     ,Name VARCHAR(25)
     ,Market VARCHAR(15)
 )
-
+GO
 CREATE TABLE dbo.dim_Date
 (
     DateKey DATE NOT NULL
@@ -26,3 +26,4 @@ CREATE TABLE dbo.dim_Date
     ,MonthName VARCHAR(20)
     ,Year VARCHAR(4)    
 )
+GO
